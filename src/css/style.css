@@ -79,7 +79,7 @@ body {
 }
 
 .info a {
-    color: black;
+    color: white;
     transition: all 500ms ease-in-out;
 
 }
@@ -95,4 +95,24 @@ body {
 
 .info li:hover {
     transition: all 500ms ease-in-out;
+}
+
+/* responsive style */
+
+@media only screen and (max-width: 600px){
+    
+    .container {
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .info {
+        text-align: center;
+    }
+
+    .info ul{
+        justify-content: center;
+        font-size: 35px;
+    }
+
 }
