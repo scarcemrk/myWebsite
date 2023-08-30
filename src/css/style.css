@@ -10,19 +10,35 @@
 
 body {
     background-color: #24283B;
-    background-image: url(/src/media/bg.jpg);
+    /* background-image: url(/src/media/bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
 
 }
 
 .container {
-    display: flex;
+    /* display: flex;
     height: 100vh;
     margin: 0;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    transition: box-shadow 0.3s, border-radius 0.3s;
+}
+
+.container:hover {
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #54bbf0, 0 0 25px #FF66C4, 0 0 30px #54bbf0, 0 0 35px #FF66C4;
 }
 
 .avatar img {
@@ -66,7 +82,7 @@ body {
     text-align: center;
     margin-top: 10px;
     list-style: none;
-    display: flex;
+    /* display: flex; */
     font-size: 33px;
 }
 
@@ -97,9 +113,23 @@ body {
     transition: all 500ms ease-in-out;
 }
 
+.social-icons {
+    margin-top: 30px;
+}  
+
+.social-icons a {
+    color: #FFF;
+    font-size: 30px; /* Increased icon size */
+    margin: 0 10px; /* Increased margin for icons */
+}
+
 /* responsive style */
 
 @media only screen and (max-width: 600px){
+
+    .container {
+        width: 80%;
+    }
 
     .avatar img {
         height: 200px;
